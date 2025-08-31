@@ -32,6 +32,17 @@ Follow these steps to run the Angular app locally:
     ```bash
     http://localhost:4200
 
+# Sample screenshots for reference
+
+## Desktop version
+
+<img width="1430" height="689" alt="Screenshot 2025-08-31 at 10 45 11 AM" src="https://github.com/user-attachments/assets/8661969d-442a-467e-b4d3-ec0497243153" />
+
+## Mobile version
+
+<img width="548" height="682" alt="Screenshot 2025-08-31 at 10 46 14 AM" src="https://github.com/user-attachments/assets/c776234f-893c-4ca3-ae18-c492013cbbd5" />
+
+
 # Manual Test Scenarios for Initials App (Tested)
 
 ---
