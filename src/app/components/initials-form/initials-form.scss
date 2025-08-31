@@ -1,0 +1,22 @@
+.form-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 76px;
+    column-gap: 16px;
+
+    .input-field, mat-form-field {
+        height: 60px;
+    }
+    .error-message {
+        display: flex;
+        align-items: flex-start;
+        color: red;
+        font-size: 12px;
+    }
+    .error-text {
+        padding-left: 5px;
+        margin-top: 4px;
+    }
+}

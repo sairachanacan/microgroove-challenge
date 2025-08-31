@@ -1,0 +1,22 @@
+<div>
+    <form class="form-container" [formGroup]="initialForm" (ngSubmit)="onSubmit()">
+        <div class="input-field">
+            <mat-form-field appearance="outline">
+                <mat-label>Enter your full name</mat-label>
+                <input matInput placeholder="Enter your full name" formControlName="name" />
+            </mat-form-field>
+            @if (initialForm.get('name')?.hasError('required') && initialForm.get('name')?.touched) {
+            <div class="error-message">
+                <mat-icon color="warn">error</mat-icon>
+                <mat-error>
+                    Name is required
+                </mat-error>
+            </div>
+            }
+        </div>
+        <div>
+            <button aria-label="Submit Initial" type="submit" matButton="filled"
+                [disabled]="initialForm.invalid">Submit</button>
+        </div>
+    </form>
+</div>

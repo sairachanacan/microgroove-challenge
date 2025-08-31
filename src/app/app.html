@@ -1,0 +1,10 @@
+<div class="app-container">
+  <h1>Microgroove Angular Challenge</h1>
+  <div class="main-content">
+    <app-initials-form (intialFormSubmitEvent)="intialFormSubmitHandler($event)"></app-initials-form>
+    <app-gallery></app-gallery>
+  </div>
+  @if (loading$ | async) {
+  <app-spinner></app-spinner>
+  }
+</div>

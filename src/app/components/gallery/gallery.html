@@ -1,0 +1,24 @@
+<div class="gallery-container">
+    @if (initials.length) {
+    @if(initials.length > 1) {
+    <button type="button" aria-label="Previous Image" matFab color="primary" (click)="previousImage()" [disabled]="currentIndex === 0">
+        <mat-icon>arrow_left</mat-icon>
+    </button>
+    }
+
+    @for (svg of initials; track $index) {
+    @if ($index === currentIndex) {
+    <mat-card class="card" appearance="outlined">
+        <mat-card-content>
+            <div [innerHTML]="svg"></div>
+        </mat-card-content>
+    </mat-card>
+    }
+    }
+    @if(initials.length > 1) {
+    <button type="button" aria-label="Next Image" matFab color="primary" (click)="nextImage()" [disabled]="currentIndex === initials.length - 1">
+        <mat-icon>arrow_right</mat-icon>
+    </button>
+    }
+    }
+</div>
