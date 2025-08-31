@@ -14,7 +14,7 @@ Follow these steps to run the Angular app locally:
 3. **Install project dependencies**
    Navigate to your project folder and run:
    ```bash
-   npm install -g @angular/cli
+   npm install
 
 4. **Run the development server**
    Start the Angular application:
