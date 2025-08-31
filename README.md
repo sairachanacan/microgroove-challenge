@@ -1,3 +1,37 @@
+
+## Running the Application
+
+Follow these steps to run the Angular app locally:
+
+1. **Install Node.js and npm**  
+   Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed.
+
+2. **Install Angular CLI**  
+   If Angular CLI is not installed globally, run:  
+   ```bash
+   npm install -g @angular/cli
+
+3. **Install project dependencies**
+   Navigate to your project folder and run:
+   ```bash
+   npm install -g @angular/cli
+
+4. **Run the development server**
+   Start the Angular application:
+   ```bash
+   ng serve
+
+5. **Run the production build**
+   Start the Angular application.
+   The compiled files will be in the dist/ folder.
+   ```bash
+   ng build
+
+6. **Open in browser**: 
+  Open application in browser 
+    ```bash
+    http://localhost:4200
+
 # Manual Test Scenarios for Initials App (Tested)
 
 ---
@@ -10,9 +44,9 @@
 ---
 
 ## 2. Submitting a Name
-- Enter a name → API is called with the correct name.
+- Enter a name → Click the submit button → API is called with the entered name.
 - Input stays visible for new entries.
-- Resulting SVG image shows below the input.
+- Resulting SVG image shows.
 - Multiple submissions build a history of images.
 
 ---
@@ -49,4 +83,6 @@
 - Layout stays centered and responsive.
 - Pressing Enter submits the form.
 - Buttons show focus states for accessibility.
-- Loader is visible but not obstructive.
+- Loader is visible when the API is in-progress.
+- In the mobile view (less than 768px) layout with one column should be shown.
+- In the tablet and above layout with two column should be shown.
